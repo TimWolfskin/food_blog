@@ -6,7 +6,6 @@ from .models import ContactLink, About
 from .forms import ContactForm
 
 
-
 class ContactView(View):
     def get(self, request):
         contacts = ContactLink.objects.all()
